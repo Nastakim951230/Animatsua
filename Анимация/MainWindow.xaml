@@ -7,11 +7,20 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <StackPanel HorizontalAlignment="Center">
-            <TextBlock Name="aktsia" HorizontalAlignment="Center" FontSize="24">АКЦИЯ</TextBlock>
-            <Image Source="./offer-187a.png" Width="250" Height="200"></Image>
-            
-            <Button Width="200" Height="30"  Name="Reklama" FontSize="14">Заказать</Button>
+        <Rectangle>
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0" >
+                    <GradientStop Color="#FFF7BEDF" Offset="1"/>
+                    <GradientStop Color="#FFF7F9CF" Offset="0"/>
+
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <StackPanel HorizontalAlignment="Center"  VerticalAlignment="Center">
+            <TextBlock Name="aktsia" HorizontalAlignment="Center" FontSize="24" FontFamily="Rage Italic">АКЦИЯ</TextBlock>
+            <Image Name="img" Source="./hr (1).png" Width="250" Height="200"></Image>
+
+            <Button Width="200" Height="30" Margin="10" BorderThickness="3" Background="#e5ccfc" Click="Reklama_Click" Name="Reklama" FontSize="14" >Заказать</Button>
         </StackPanel>
     </Grid>
 </Window>
