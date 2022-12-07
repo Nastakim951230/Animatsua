@@ -32,6 +32,14 @@ namespace Анимация
             WA.AutoReverse = true;
             Reklama.BeginAnimation(WidthProperty, WA);
 
+            ThicknessAnimation MA = new ThicknessAnimation(); 
+            MA.From = new Thickness(20, 20, 20, 20);
+            MA.To = new Thickness(0, 0, 0, 0);
+            MA.Duration = TimeSpan.FromSeconds(2);
+            MA.RepeatBehavior = RepeatBehavior.Forever;
+            MA.AutoReverse = true;
+            Reklama.BeginAnimation(MarginProperty, MA);
+
 
             DoubleAnimation HA = new DoubleAnimation();
             HA.From = 30;
